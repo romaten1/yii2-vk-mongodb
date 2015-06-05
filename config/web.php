@@ -23,6 +23,9 @@ $config = [
                 ],
             ],
         ],
+        'vk' => [
+            'class' => 'app\modules\vk\Module',
+        ],
     ],
     'components' => [
         'request' => [
@@ -57,7 +60,7 @@ $config = [
         ],
         'mongodb' => [
             'class' => '\yii\mongodb\Connection',
-            'dsn' => 'mongodb://user:123456@localhost:27017/local',
+            'dsn' => 'mongodb://user:123456@localhost:27017/vkmongo',
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
